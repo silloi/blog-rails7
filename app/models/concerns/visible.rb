@@ -4,7 +4,6 @@ module Visible
   VALID_STATUSES = ['public', 'private', 'archived']
 
   included do
-    puts "HO", :status
     validates :status, inclusion: { in: VALID_STATUSES }
   end
 
